@@ -7,20 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySystemApi", "Library
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domaina", "Domaina", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-	ProjectSection(SolutionItems) = preProject
-		Domain\Entities\Book.cs = Domain\Entities\Book.cs
-		Shared.Domain\Enums\BookReturnStatus.cs = Shared.Domain\Enums\BookReturnStatus.cs
-		Shared.Domain\Enums\Category.cs = Shared.Domain\Enums\Category.cs
-		Loan.Domain\Entities\Loan.cs = Loan.Domain\Entities\Loan.cs
-		Shared.Domain\Enums\LoanStatus.cs = Shared.Domain\Enums\LoanStatus.cs
-		User.Domain\Entities\User.cs = User.Domain\Entities\User.cs
-		Shared.Domain\Enums\UserStatus.cs = Shared.Domain\Enums\UserStatus.cs
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{808519E0-6006-44C6-ADEF-D8FF28C64806}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{83FFCFDD-0FC8-4539-9BB1-8945E8F3BCC6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain\Domain.csproj", "{43E740C8-0E50-4B4F-A9F4-84201508EDE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,12 +25,17 @@ Global
 		{635FB643-3974-44D5-A93B-5906D192E32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635FB643-3974-44D5-A93B-5906D192E32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635FB643-3974-44D5-A93B-5906D192E32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E740C8-0E50-4B4F-A9F4-84201508EDE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E740C8-0E50-4B4F-A9F4-84201508EDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E740C8-0E50-4B4F-A9F4-84201508EDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E740C8-0E50-4B4F-A9F4-84201508EDE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{635FB643-3974-44D5-A93B-5906D192E32C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{43E740C8-0E50-4B4F-A9F4-84201508EDE6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF4D950B-7D64-424F-B0E3-B33CB40D10A3}
