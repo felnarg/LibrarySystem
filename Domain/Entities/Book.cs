@@ -1,8 +1,9 @@
-﻿using Book.Domain.Enums;
+﻿using Shared.Domain.Enums;
+using Shared.Domain.Interfaces;
 
 namespace Book.Domain.Entities;
 
-public class Book
+public class Book : IBook
 {
     public Guid BookId { get; set; }
     public string? BookName { get; set; }
@@ -11,4 +12,5 @@ public class Book
     public Category Category { get; set; }
     public string? Author { get; set; }
     public string? Editorial { get; set; }
+    public ILoan? Loan { get; set; }
 }
