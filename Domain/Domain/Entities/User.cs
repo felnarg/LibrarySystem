@@ -1,6 +1,6 @@
-﻿using Domain.Enums;
+﻿using DomainProject.Enums;
 
-namespace User.Domain.Entities;
+namespace DomainProject.Entities;
 
 public class User
 {

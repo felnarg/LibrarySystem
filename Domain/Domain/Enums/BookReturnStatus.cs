@@ -1,7 +1,12 @@
-﻿namespace Domain.Enums;
+﻿namespace DomainProject.Enums;
 
-public enum BookReturnStatus
+public enum BookConditionStatus
 {
-    Borrowed,
-    Delivered
+    LikeNew,         
+    LightWear,        
+    ModerateDamage,  
+    HeavyDamage,     
+    Unusable,       
+    Lost,           
+    NeedsReview     
 }
