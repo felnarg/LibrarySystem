@@ -59,8 +59,15 @@ public class LibraryRepository<T> : DomainProject.Repository.IRepository<T> wher
 
     public async Task UpdateAsync(T entity)
     {
-        _context!.Set<T>().Update(entity);
-        await _context!.SaveChangesAsync();
+        try
+        {
+            _context!.Set<T>().Update(entity);
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception ex)
+        {
+            throw new KeyNotFoundException($"No se encuentra la entidad {typeof(T).Name} buscada");
+        }
     }
 
     public async Task DeleteAsync(int id)
