@@ -1,6 +1,6 @@
-﻿using BookReturn.Domain.Enums;
+﻿using DomainProject.Enums;
 
-namespace BookReturn.Domain.Entities;
+namespace DomainProject.Entities;
 
 public class BookReturn
 {
@@ -9,5 +9,5 @@ public class BookReturn
     public Guid BookId { get; set; }
     public DateTime LoanDate { get; set; }
     public DateTime DueDate { get; set; }
-    public Status Status { get; set; }
+    public BookConditionStatus Status { get; set; }
 }

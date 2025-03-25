@@ -1,6 +1,6 @@
-﻿using User.Domain.Enums;
+﻿using DomainProject.Enums;
 
-namespace User.Domain.Entities;
+namespace DomainProject.Entities;
 
 public class User
 {
@@ -10,5 +10,5 @@ public class User
     public string? Cellphone { get; set; }
     public string? City { get; set; }
     public DateTime RegisterDate { get; set; }
-    public Status Status { get; set; }
+    public UserStatus Status { get; set; }
 }

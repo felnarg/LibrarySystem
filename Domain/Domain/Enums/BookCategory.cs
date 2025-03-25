@@ -1,6 +1,6 @@
-﻿namespace Book.Domain.Enums;
+﻿namespace DomainProject.Enums;
 
-public enum Category
+public enum BookCategory
 {
     Horror,
     Fantasy,
