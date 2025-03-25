@@ -11,4 +11,5 @@ public class Book
     public BookCategory Category { get; set; }
     public string? Author { get; set; }
     public string? Editorial { get; set; }
+    public ICollection<Loan>? Loan { get; set; }
 }

@@ -2,7 +2,7 @@
 
 namespace DomainProject.Entities;
 
-public class BookReturn
+public class ReturnBook
 {
     public Guid LoanId { get; set; }
     public Guid UserId { get; set; }
